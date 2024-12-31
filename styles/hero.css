@@ -230,3 +230,19 @@ section.hero {
     transform: translateY(-15rem);
  }
 }
+
+@media (width < 80em) {
+   section.hero {
+     flex-direction: column-reverse;
+     padding-top: 0.5rem;
+     
+     & .buttons {
+       flex-direction: column-reverse;
+       width: 65%;
+     }   
+     
+     & > div:nth-child(2) {
+       height: 25.5rem;
+    }
+   }
+ }
